@@ -26,3 +26,16 @@ if (!isPortAvailable($host, $port)) {
 // Current project path
 $projectPath = __DIR__;
 $projectName = basename($projectPath);
+
+// Display server information
+echo "\n";
+echo "PHP Development Server\n";
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+echo "Project: {$projectName}\n";
+echo "Path: {$projectPath}\n";
+echo "PHP: " . PHP_VERSION . "\n";
+echo "━\n";
+echo "Server is ready!\n";
+echo "Go to http://{$host}:{$port} to view the project\n";
+echo "Press Ctrl+C to stop\n\n";
+
