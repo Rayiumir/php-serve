@@ -2,7 +2,6 @@
 <?php
 
 // check first argument
-
 if (!isset($argv[1]) || $argv[1] !== 'server') {
     echo "Invalid command!\n";
     echo "Use: php run server\n";
@@ -11,11 +10,16 @@ if (!isset($argv[1]) || $argv[1] !== 'server') {
 }
 
 // Default settings
-
 $defaultPort = 8000;
 $host = 'localhost';
 
 // Get port from command line argument
-
 $port = isset($argv[2]) && is_numeric($argv[2]) ? (int)$argv[2] : $defaultPort;
+
+// Check port availability
+if (!isPortAvailable($host, $port)) {
+    echo "Port {$port} is in use.\n";
+    echo "Try another port: php run server " . ($port + 1) . "\n";
+    exit(1);
+}
 
