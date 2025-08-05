@@ -53,4 +53,5 @@ Press Ctrl+C to stop
 [Wed Aug  6 02:16:51 2025] PHP 8.3.6 Development Server (http://localhost:8000) started
 ```
 
+https://github.com/user-attachments/assets/920cbf6c-3ee9-4765-bc26-e4cf023d3e6b
 
