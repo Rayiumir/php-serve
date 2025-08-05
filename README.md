@@ -15,7 +15,7 @@ A simple PHP development server like Laravel's artisan serve for vanilla PHP pro
 
 ```bash
 git clone https://github.com/Rayiumir/php-serve.git
-cd php-server/
+cd php-serve/
 ```
 
 # Start the Server
