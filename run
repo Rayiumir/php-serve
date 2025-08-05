@@ -39,3 +39,6 @@ echo "Server is ready!\n";
 echo "Go to http://{$host}:{$port} to view the project\n";
 echo "Press Ctrl+C to stop\n\n";
 
+// Run Server
+$command = "php -S {$host}:{$port}";
+system($command);
