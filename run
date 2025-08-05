@@ -23,6 +23,15 @@ if (!isPortAvailable($host, $port)) {
     exit(1);
 }
 
+function isPortAvailable($host, $port) {
+    $connection = @fsockopen($host, $port, $errno, $errstr, 1);
+    if (is_resource($connection)) {
+        fclose($connection);
+        return false;
+    }
+    return true;
+}
+
 // Current project path
 $projectPath = __DIR__;
 $projectName = basename($projectPath);
@@ -42,3 +51,4 @@ echo "Press Ctrl+C to stop\n\n";
 // Run Server
 $command = "php -S {$host}:{$port}";
 system($command);
+
