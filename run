@@ -1,5 +1,12 @@
 #!/usr/bin/env php
 <?php
+/**
+* 
+* Name: PHP Run Server Command
+* Author: Raymond Baghumian
+* Description: Place this file named "run" in the root of your PHP project
+*
+*/
 
 // check first argument
 if (!isset($argv[1]) || $argv[1] !== 'server') {
