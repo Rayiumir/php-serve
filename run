@@ -23,3 +23,6 @@ if (!isPortAvailable($host, $port)) {
     exit(1);
 }
 
+// Current project path
+$projectPath = __DIR__;
+$projectName = basename($projectPath);
