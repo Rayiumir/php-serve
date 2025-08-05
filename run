@@ -15,4 +15,7 @@ if (!isset($argv[1]) || $argv[1] !== 'server') {
 $defaultPort = 8000;
 $host = 'localhost';
 
+// Get port from command line argument
+
+$port = isset($argv[2]) && is_numeric($argv[2]) ? (int)$argv[2] : $defaultPort;
 
