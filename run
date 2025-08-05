@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+// check first argument
+
+if (!isset($argv[1]) || $argv[1] !== 'server') {
+    echo "Invalid command!\n";
+    echo "Use: php run server\n";
+    echo "Or: php run server 8080\n";
+    exit(1);
+}
+
+// Default settings
+
+$defaultPort = 8000;
+$host = 'localhost';
+
+
